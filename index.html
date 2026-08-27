@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>untuk kamu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- Babak 1 & 3 berbagi "dunia" yang sama: pantai yang berubah warna -->
+  <div id="world">
+    <canvas id="beachCanvas"></canvas>
+
+    <div id="introLayer" class="layer">
+      <div class="eyebrow">Before our seasons collided</div>
+      <h1>My entire world was merely a landscape in monochrome.</h1>
+      <button id="revealBtn" class="btn">Our Story Untold</button>
+    </div>
+
+    <div id="farewellLayer" class="layer">
+      <div class="eyebrow">Two Different Paths</div>
+      <h1>May our separate roads lead us to gentle places.</h1>
+      <p class="fw-sub">No regrets, no bitterness — just a warm wish for every horizon you choose to chase next.</p>
+    </div>
+  </div>
+
+  <!-- Babak 2: pesan utama -->
+<div id="memoriesScene">
+  <div class="sheet">
+    <div class="eyebrow">A Nostalgic Echo</div>
+    <h2>It’s funny how terrified we once were of the unknown.</h2>
+    
+    <p>Looking back, I can't help but smile at how we used to fear the future. We were so overwhelmed by a world that felt far too heavy and demanding, yet we found solace in the simple act of sharing our worries with each other.</p>
+    
+    <p>We turned quiet late-night conversations into our safe haven—a place where the noise of the world couldn't reach us.</p>
+
+      <div class="eyebrow gallery-label">Moments We Shared</div>
+      <div class="gallery" id="photoGallery"></div>
+
+      <div class="quote-line">
+        Trought your still my favorite place on earth
+        But I am no good for you
+        <span class="quote-credit">— IB: Raissa Anggiani</span>
+      </div>
+
+      <div class="spotify-wrap">
+        <div id="spotify-embed"></div>
+      </div>
+      <a class="spotify-fallback" href="https://open.spotify.com/track/2rbDhOo9Fh61Bbu23T2qCk?si=d7aa35c80bce4f98" target="_blank" rel="noopener">🎵 Listen to this song ↗</a>
+
+      <p>You did so well holding on through this past year. I'm endlessly proud of how far you've come. Walk ahead with confidence—I'll be right behind, catching up in my own time.</p>
+
+      <div class="continue-row">
+        <button id="continueBtn" class="btn-dark">Thanks, for everything</button>
+      </div>
+    </div>
+  </div>
+
+  <button id="skipBtn" class="skip">lewati animasi</button>
+</div>
+
+<!-- Spotify iFrame Playback API: dipakai supaya lagu bisa dipicu play() tepat saat tombol diklik -->
+<script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+<script src="script.js"></script>
+</body>
+</html>
+
